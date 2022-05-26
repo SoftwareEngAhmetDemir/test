@@ -13987,6 +13987,14 @@ h1, .h1 {
   color: #4294FF;
 }
 
+#nav-btn {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: fixed;
+  left: 100%;
+  top: 0;
+}
+
 header {
   color: #758ca3;
   background-color: #000000;
@@ -14201,6 +14209,9 @@ ul .dropdown-menu li::after {
 }
 
 @media (max-width: 991.98px) {
+  #nav-btn {
+    left: 0 !important;
+  }
   #content {
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;

@@ -11,7 +11,12 @@
 h1 {
     color: $primary;
 }
-
+#nav-btn{
+    transition: all 1s ease-in-out;
+    position:fixed;
+    left:100%;
+    top:0;
+}
 header {
     color: #758ca3;
     background-color: #000000;
@@ -246,7 +251,9 @@ ul {
 }
 
 @include media-breakpoint-down(lg) {
-   
+    #nav-btn{
+        left:0 !important;
+    }
    #content{
     transition: all 1s ease-in-out;
    }
