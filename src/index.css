@@ -13993,6 +13993,7 @@ header {
 }
 
 header .header-part {
+  display: block;
   font-size: 13px;
 }
 
@@ -14135,6 +14136,57 @@ header .header-part ul.city-time li:not(:last-child):after {
   border-bottom: 0 !important;
 }
 
+ul .dropdown-menu {
+  background-color: #011326;
+  border-bottom: 5px solid #4294FF;
+  border-top: 5px solid #4294FF;
+  padding: 5px 17px 10px 17px !important;
+}
+
+ul .dropdown-menu .dropdown-item {
+  position: relative;
+  color: #758ca3 !important;
+  padding: 5px 10px;
+}
+
+ul .dropdown-menu .dropdown-item:hover {
+  color: #fff !important;
+}
+
+ul .dropdown-menu .dropdown-item:after {
+  position: absolute;
+  -webkit-transform: scaleX(1) !important;
+          transform: scaleX(1) !important;
+  top: calc(100% - 2px) !important;
+  bottom: 0 !important;
+  width: 40px;
+  height: 2px !important;
+}
+
+ul .dropdown-menu .dropdown-item:before {
+  left: 0 !important;
+  content: "";
+  background-color: #758ca3;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 100% !important;
+  bottom: 0 !important;
+}
+
+ul .dropdown-menu .dropdown-item:hover {
+  color: #fff;
+}
+
+ul .dropdown-menu .dropdown-item:hover:after {
+  width: 100%;
+}
+
+ul .dropdown-menu li::after {
+  content: "" !important;
+  padding: 0 !important;
+}
+
 .dropdown-toggle::after {
   content: url("../assets/images/arrow.svg");
   border: none;
@@ -14149,8 +14201,35 @@ header .header-part ul.city-time li:not(:last-child):after {
 }
 
 @media (max-width: 991.98px) {
+  #content {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  header {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  header .header-part {
+    display: none;
+  }
   header ul li {
     display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    position: relative;
+    width: 100% !important;
+  }
+  header .header-part {
+    display: block !important;
+  }
+  header ul li {
+    display: inline !important;
   }
 }
 
