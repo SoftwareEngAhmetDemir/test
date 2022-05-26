@@ -11,12 +11,14 @@
 h1 {
     color: $primary;
 }
-#nav-btn{
+
+#nav-btn {
     transition: all 1s ease-in-out;
-    position:fixed;
-    left:100%;
-    top:0;
+    position: fixed;
+    left: 100%;
+    top: 0;
 }
+
 header {
     color: #758ca3;
     background-color: #000000;
@@ -251,12 +253,14 @@ ul {
 }
 
 @include media-breakpoint-down(lg) {
-    #nav-btn{
-        left:0 !important;
+    #nav-btn {
+        left: 0 !important;
     }
-   #content{
-    transition: all 1s ease-in-out;
-   }
+
+    #content {
+        transition: all 1s ease-in-out;
+    }
+
     header {
         position: fixed;
         height: 100%;
@@ -277,18 +281,23 @@ ul {
 
 
 @include media-breakpoint-up(lg) {
-
-header {
-    position:relative;
-    width:100% !important;
-    .header-part {
-        display: block !important;
+    #content {
+        margin: 0 !important;
     }
-    ul {
-        li {
-            display: inline !important;
+
+    header {
+        position: relative;
+        width: 100% !important;
+
+        .header-part {
+            display: block !important;
+        }
+
+        ul {
+            li {
+                display: inline !important;
+            }
         }
     }
-}
 
 }

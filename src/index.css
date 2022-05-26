@@ -14232,6 +14232,9 @@ ul .dropdown-menu li::after {
 }
 
 @media (min-width: 992px) {
+  #content {
+    margin: 0 !important;
+  }
   header {
     position: relative;
     width: 100% !important;
