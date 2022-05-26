@@ -1,0 +1,38 @@
+$base-url: "../assets/fonts/";
+@font-face {
+    font-family: "Barlow";
+    src: url($base-url+"Barlow/Barlow-Regular.ttf");
+    font-weight: 400;
+ }
+ 
+ @font-face {
+    font-family: "Barlow";
+    src: url($base-url+"Barlow/Barlow-SemiBold.ttf");
+    font-weight: 500;
+ }
+
+ @font-face {
+    font-family: "Barlow";
+    src: url($base-url+"Barlow/Barlow-Bold.ttf");
+    font-weight: 700;
+ }
+
+ //consendense font
+
+ @font-face {
+    font-family: "Barlow-condense";
+    src: url($base-url+"Barlow-condense/BarlowCondensed-Regular.ttf");
+    font-weight: 400;
+ }
+ 
+ @font-face {
+    font-family: "Barlow-condense";
+    src: url($base-url+"Barlow-condense/BarlowCondensed-SemiBold.ttf");
+    font-weight: 500;
+ }
+
+ @font-face {
+    font-family: "Barlow-condense";
+    src: url($base-url+"Barlow-condense/BarlowCondensed-Bold.ttf");
+    font-weight: 700;
+ }

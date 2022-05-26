@@ -1,0 +1,88 @@
+.first-section .stepper-p {
+  position: relative;
+}
+
+.first-section .stepper-p .nav-tabs {
+  border: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-section .stepper-p .nav-tabs .stepper-b {
+  width: 14.13px;
+  height: 14.13px;
+  background: #318fff;
+  border-radius: 50%;
+  border: 0;
+  z-index: 2;
+}
+
+.first-section .stepper-p .nav-tabs .stepper-b.active {
+  width: 21.84px;
+  height: 21.84px;
+  background: #fff;
+  border: 2px solid #318fff;
+}
+
+.first-section .stepper-p progress {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+}
+
+.first-section .clip-board {
+  position: relative;
+}
+
+.first-section .clip-board img {
+  cursor: pointer;
+}
+
+.first-section .clip-board .tooltipc {
+  color: white;
+  text-align: center;
+  background-color: black;
+  width: 40%;
+  position: relative;
+  top: -100%;
+  right: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  border-radius: 6px;
+  padding: 5px 0;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.first-section .clip-board .tooltipc:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+}
+
+.first-section .hands {
+  height: 50px;
+}
+/*# sourceMappingURL=stepper.css.map */
