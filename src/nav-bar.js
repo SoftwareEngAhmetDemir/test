@@ -3,9 +3,10 @@ const content = document.getElementById("content");
 const header = document.getElementById("header");
 const headerPart = document.getElementById("header-part");
 navbtn.onclick = function (e) {
-    console.log("cliced");
-    content.style.marginLeft = "40%";
-    header.style.width = "40%";
+    console.log(window.innerWidth);
+    content.style.marginLeft = "260px";
+    header.style.width = "260px";
+    
     headerPart.style.display = "block"
     navbtn.classList.add("d-none");
     navbtn.classList.remove("d-lg-block");
