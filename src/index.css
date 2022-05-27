@@ -14012,8 +14012,8 @@ header .header-part li a {
 }
 
 header .header-part li a::after {
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   -webkit-transform-origin: center center;
           transform-origin: center center;
   width: 100%;
@@ -14242,8 +14242,8 @@ ul .dropdown-menu li::after {
     background: #098cdf;
     height: 2px;
     width: 100%;
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     -webkit-transform-origin: center center;
             transform-origin: center center;
     margin: 0 !important;
@@ -14295,6 +14295,20 @@ ul .dropdown-menu li::after {
   ul .dropdown-menu .dropdown-item {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown::before {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    content: url("../assets/images/arrow.svg");
+    position: absolute;
+    right: 0;
+  }
+  .dropdown.show::before {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 

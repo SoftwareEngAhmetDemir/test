@@ -8,6 +8,7 @@
     }
 }
 
+
 h1 {
     color: $primary;
 }
@@ -35,7 +36,7 @@ header {
 
 
                 &::after {
-                    transition: all 0.4s ease-out;
+                    transition: all 0.4s ease-in-out;
                     transform-origin: center center;
                     width: 100%;
                     transform: scaleX(0);
@@ -310,7 +311,7 @@ ul {
                             background: #098cdf;
                             height: 2px;
                             width: 100%;
-                            transition: all 0.4s ease-out;
+                            transition: all 0.4s ease-in-out;
                             transform-origin: center center;
                             margin: 0 !important;
                         }
@@ -391,6 +392,27 @@ ul {
 
             }
         }
+
+    }
+
+    .dropdown {
+        
+        position: relative;
+
+        &::before {
+            transition: all 0.5s ease-in-out;
+            content: url("../assets/images/arrow.svg");
+            position: absolute;
+            right: 0;
+        }
+       
+    }
+    .dropdown.show {
+       
+            &::before {
+                transform: rotate(180deg);
+            
+            }
     }
 }
 
