@@ -1,3 +1,7 @@
+.clip {
+   position: relative;
+   top: 35px;
+}
 .first-section {
     .stepper-p {
         position: relative;
@@ -43,6 +47,7 @@
 
         img {
             cursor: pointer;
+            z-index: 11;
         }
 
         .tooltipc {
