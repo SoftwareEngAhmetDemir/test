@@ -14113,7 +14113,7 @@ header .header-part ul.city-time li:not(:last-child):after {
 }
 
 .third-section {
-  height: 284px;
+  min-height: 284px;
   background: #f8faff;
 }
 
@@ -14274,7 +14274,7 @@ ul .dropdown-menu li::after {
   header ul li {
     display: block !important;
   }
-  ul.dropdown-menu {
+  header ul.dropdown-menu {
     position: relative !important;
     top: 1px !important;
     -webkit-transform: translate3d(0px, 16px, 0px) !important;
@@ -14285,28 +14285,28 @@ ul .dropdown-menu li::after {
     border-bottom-width: 2px !important;
     padding-bottom: 10px !important;
   }
-  ul.dropdown-menu li {
+  header ul.dropdown-menu li {
     border-width: 0 !important;
     padding: 0 !important;
   }
-  ul.dropdown-menu li:hover {
+  header ul.dropdown-menu li:hover {
     border-top-width: 2px !important;
   }
-  ul .dropdown-menu .dropdown-item {
+  header ul .dropdown-menu .dropdown-item {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .dropdown {
+  header .dropdown {
     position: relative;
   }
-  .dropdown::before {
+  header .dropdown::before {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     content: url("../assets/images/arrow.svg");
     position: absolute;
     right: 0;
   }
-  .dropdown.show::before {
+  header .dropdown.show::before {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }

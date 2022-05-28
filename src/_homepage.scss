@@ -88,10 +88,12 @@ header {
                     background-color: #a9391f;
                 }
 
+            
                 &:not(:last-child):after {
                     content: "|";
                     padding: 0 5px;
                 }
+
 
             }
         }
@@ -150,7 +152,7 @@ header {
 }
 
 .third-section {
-    height: 284px;
+    min-height: 284px;
     background: #f8faff;
 }
 
@@ -283,8 +285,6 @@ ul {
 
 
                 li {
-
-
                     sup {}
 
                     sup.yeni {}
@@ -360,59 +360,61 @@ ul {
             }
         }
 
-    }
-
-    ul.dropdown-menu {
-        position: relative !important;
-        top: 1px !important;
-        transform: translate3d(0px, 16px, 0px) !important;
-        border-top-width: 0px !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        border-bottom-width: 2px !important;
-        padding-bottom: 10px !important;
-
-        li {
-            border-width: 0 !important;
-            padding: 0 !important;
-
-            &:hover {
-                border-top-width: 2px !important;
-            }
-        }
-    }
-
-    ul {
-        .dropdown-menu {
 
 
-            .dropdown-item {
-                padding-left: 0 !important;
-                padding-right: 0 !important;
+        ul.dropdown-menu {
+            position: relative !important;
+            top: 1px !important;
+            transform: translate3d(0px, 16px, 0px) !important;
+            border-top-width: 0px !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            border-bottom-width: 2px !important;
+            padding-bottom: 10px !important;
 
+            li {
+                border-width: 0 !important;
+                padding: 0 !important;
+
+                &:hover {
+                    border-top-width: 2px !important;
+                }
             }
         }
 
-    }
+        ul {
+            .dropdown-menu {
 
-    .dropdown {
-        
-        position: relative;
 
-        &::before {
-            transition: all 0.5s ease-in-out;
-            content: url("../assets/images/arrow.svg");
-            position: absolute;
-            right: 0;
+                .dropdown-item {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+
+                }
+            }
+
         }
-       
-    }
-    .dropdown.show {
-       
+
+        .dropdown {
+
+            position: relative;
+
+            &::before {
+                transition: all 0.5s ease-in-out;
+                content: url("../assets/images/arrow.svg");
+                position: absolute;
+                right: 0;
+            }
+
+        }
+
+        .dropdown.show {
+
             &::before {
                 transform: rotate(180deg);
-            
+
             }
+        }
     }
 }
 
