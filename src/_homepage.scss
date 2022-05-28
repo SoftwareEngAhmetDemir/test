@@ -27,6 +27,7 @@ header {
     .header-part {
         display: block;
         font-size: 13px;
+        padding: 0 10px;
 
         li {
             a {
@@ -417,42 +418,43 @@ ul {
         }
     }
 
-  
-        .credential {
-            position: relative;
-            padding: 10px !important;
-            background-color: rgba(9,140,223,.15);
-            width: 260px !important;
-            
-            li {
-                width: 115px !important;
-                height: 35px !important;
-                text-align: center;
-              
 
-                 a {
-                     display: block;
-                   position:relative;
-                     top: 50%;
-                     transform: translateY(-50%);
-                 }
-    
-                &.register {
-                    background-color: $primary;
-                    margin-right:5px !important;
-                }
-    
-                &.login {
-                    background-color: $green;
-                    margin-left:5px !important;
-                }
+    .credential {
+        position: relative;
+        padding: 10px !important;
+        background-color: rgba(9, 140, 223, .15);
+        margin-left: -10px !important;
+        width: calc(100% + 20px) !important;
+
+        li {
+            width: 115px !important;
+            height: 35px !important;
+            text-align: center;
+
+
+            a {
+                display: block;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
             }
-    
-           li a::after {
-                transform: scale(0) !important;
+
+            &.register {
+                background-color: $primary;
+                margin-right: 5px !important;
+            }
+
+            &.login {
+                background-color: $green;
+                margin-left: 5px !important;
             }
         }
-    
+
+        li a::after {
+            transform: scale(0) !important;
+        }
+    }
+
 
     .border-top {
         border: 0 !important;

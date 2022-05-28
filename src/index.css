@@ -14003,6 +14003,7 @@ header {
 header .header-part {
   display: block;
   font-size: 13px;
+  padding: 0 10px;
 }
 
 header .header-part li a {
@@ -14314,7 +14315,8 @@ ul .dropdown-menu li::after {
     position: relative;
     padding: 10px !important;
     background-color: rgba(9, 140, 223, 0.15);
-    width: 260px !important;
+    margin-left: -10px !important;
+    width: calc(100% + 20px) !important;
   }
   .credential li {
     width: 115px !important;
