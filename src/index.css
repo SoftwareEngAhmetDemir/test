@@ -13990,6 +13990,11 @@ h1, .h1 {
 .nav-btn-parent {
   background: black;
   height: 35px;
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav-btn-parent #nav-btn {
@@ -14000,9 +14005,13 @@ h1, .h1 {
   color: white;
 }
 
+.hx {
+  top: 35px !important;
+}
+
 header {
   color: #758ca3;
-  background-color: #011326;
+  background-color: black;
   z-index: 99;
 }
 

@@ -1,3 +1,4 @@
+
 .bar {
     transition: all 2s ease-in-out;
     width: 0;
@@ -16,7 +17,11 @@ h1 {
 .nav-btn-parent{
     background: black;
     height: 35px;
-   
+   border-bottom: 1px solid #fff;
+   position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     #nav-btn {
         transition: all 1s ease-in-out;
         cursor:pointer;
@@ -25,9 +30,12 @@ h1 {
       
     }
 }
+.hx{
+    top:35px !important;
+}
 header {
     color: #758ca3;
-    background-color: #011326;
+    background-color: black;
     z-index: 99;
     .header-part {
         display: block;
