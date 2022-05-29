@@ -59,11 +59,11 @@
 }
 
 .link-light {
-  color: #f8faff;
+  color: #004378;
 }
 
 .link-light:hover, .link-light:focus {
-  color: #f9fbff;
+  color: #003660;
 }
 
 .link-dark {
@@ -365,18 +365,18 @@
 }
 
 .shadow {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(3, 13, 26, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(3, 13, 26, 0.15) !important;
 }
 
 .shadow-sm {
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(3, 13, 26, 0.075) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(3, 13, 26, 0.075) !important;
 }
 
 .shadow-lg {
-  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  -webkit-box-shadow: 0 1rem 3rem rgba(3, 13, 26, 0.175) !important;
+          box-shadow: 0 1rem 3rem rgba(3, 13, 26, 0.175) !important;
 }
 
 .shadow-none {
@@ -469,7 +469,7 @@
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid rgba(117, 140, 163, 0.3) !important;
 }
 
 .border-0 {
@@ -477,7 +477,7 @@
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid rgba(117, 140, 163, 0.3) !important;
 }
 
 .border-top-0 {
@@ -485,7 +485,7 @@
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid rgba(117, 140, 163, 0.3) !important;
 }
 
 .border-end-0 {
@@ -493,7 +493,7 @@
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid rgba(117, 140, 163, 0.3) !important;
 }
 
 .border-bottom-0 {
@@ -501,7 +501,7 @@
 }
 
 .border-start {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid rgba(117, 140, 163, 0.3) !important;
 }
 
 .border-start-0 {
@@ -533,7 +533,7 @@
 }
 
 .border-light {
-  border-color: #f8faff !important;
+  border-color: #004378 !important;
 }
 
 .border-dark {
@@ -1306,7 +1306,7 @@
 }
 
 .fs-4 {
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: calc(1.2815rem + 0.378vw) !important;
 }
 
 .fs-5 {
@@ -1350,15 +1350,15 @@
 }
 
 .lh-sm {
-  line-height: 1.25 !important;
+  line-height: 1.1875 !important;
 }
 
 .lh-base {
-  line-height: 1.5 !important;
+  line-height: 1.1875 !important;
 }
 
 .lh-lg {
-  line-height: 2 !important;
+  line-height: 1.1875 !important;
 }
 
 .text-start {
@@ -1474,7 +1474,7 @@
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(3, 13, 26, 0.5) !important;
 }
 
 .text-white-50 {
@@ -1617,7 +1617,7 @@
 }
 
 .rounded {
-  border-radius: 0.25rem !important;
+  border-radius: 0.5rem !important;
 }
 
 .rounded-0 {
@@ -1629,7 +1629,7 @@
 }
 
 .rounded-2 {
-  border-radius: 0.25rem !important;
+  border-radius: 0.5rem !important;
 }
 
 .rounded-3 {
@@ -1645,23 +1645,23 @@
 }
 
 .rounded-top {
-  border-top-left-radius: 0.25rem !important;
-  border-top-right-radius: 0.25rem !important;
+  border-top-left-radius: 0.5rem !important;
+  border-top-right-radius: 0.5rem !important;
 }
 
 .rounded-end {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
 }
 
 .rounded-bottom {
-  border-bottom-right-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
 }
 
 .rounded-start {
-  border-bottom-left-radius: 0.25rem !important;
-  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+  border-top-left-radius: 0.5rem !important;
 }
 
 .visible {
@@ -4568,7 +4568,7 @@
     font-size: 1.75rem !important;
   }
   .fs-4 {
-    font-size: 1.5rem !important;
+    font-size: 1.565rem !important;
   }
 }
 
