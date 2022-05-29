@@ -39,6 +39,7 @@ document.getElementById("header").onclick = function(e){
    if(e.target.getAttribute("id")!=="xlang"){
     langs.classList.add("langs");
     langs.classList.remove("make-text-white");
+    document.querySelector("#lang a").classList.add("dropdown");
    }
    
 }
