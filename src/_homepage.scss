@@ -13,17 +13,22 @@ h1 {
     color: $primary;
 }
 
-#nav-btn {
-    transition: all 1s ease-in-out;
-    position: fixed;
-    left: 100%;
-    top: 0;
+.nav-btn-parent{
+    background: black;
+    height: 35px;
+   
+    #nav-btn {
+        transition: all 1s ease-in-out;
+        cursor:pointer;
+        font-size: 20px;
+        color:white;
+      
+    }
 }
-
 header {
     color: #758ca3;
     background-color: #011326;
-
+    z-index: 99;
     .header-part {
         display: block;
         font-size: 13px;
@@ -180,6 +185,7 @@ header {
 }
 
 .fourth-section {
+    overflow-x: hidden !important;
     table {
         thead {
             height: 40px;
@@ -499,7 +505,16 @@ ul {
 
     }
 }
-
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 @include media-breakpoint-up(lg) {
     #content {
         margin: 0 !important;

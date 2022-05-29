@@ -13987,17 +13987,23 @@ h1, .h1 {
   color: #4294FF;
 }
 
-#nav-btn {
+.nav-btn-parent {
+  background: black;
+  height: 35px;
+}
+
+.nav-btn-parent #nav-btn {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  position: fixed;
-  left: 100%;
-  top: 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
 }
 
 header {
   color: #758ca3;
   background-color: #011326;
+  z-index: 99;
 }
 
 header .header-part {
@@ -14137,6 +14143,10 @@ header .header-part ul.city-time li:not(:last-child):after {
 .btn-light:focus, .btn-light:hover {
   border: 1px solid #e4e8f2;
   background-color: #e4e8f2;
+}
+
+.fourth-section {
+  overflow-x: hidden !important;
 }
 
 .fourth-section table thead {
@@ -14370,6 +14380,17 @@ ul .dropdown-menu li::after {
     -webkit-transform: rotate(180deg) !important;
             transform: rotate(180deg) !important;
   }
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 @media (min-width: 992px) {

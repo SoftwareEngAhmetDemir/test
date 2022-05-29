@@ -14,18 +14,6 @@
     body {
         overflow-x: hidden;
     }
-
-    .cover {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 5;
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-  
 </style>
 <!-- <link rel="stylesheet" href="customIndex.css"> -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -130,11 +118,13 @@
                             <li>
                                 <a href="#"> DUYURULAR <sup class="duyurular text-white">1</sup></a>
                             </li>
-                            <li id="langs">
-                                <a href="#"><img width="25px" src="../assets/images/world.svg" alt=""><span class="ms-2">ENGLISH</span></a>
+                            <li id="langs" class="d-lg-none d-block">
+                                <a href="#"><img width="25px" src="../assets/images/world.svg" alt=""><span
+                                        class="ms-2">ENGLISH</span></a>
                             </li>
-                            <li id="lang" class="title" style="z-index: 99999999999999;">
-                                 <a id="xlang" class="dropdown dropdown-toggle" href="#"><img width="25px" src="../assets/images/world.svg" alt=""><span class="ms-2">TÜRKÇE</span></a>
+                            <li id="lang" class="title d-lg-none d-block" style="z-index: 99999999999999;">
+                                <a id="xlang" class="dropdown dropdown-toggle" href="#"><img width="25px"
+                                        src="../assets/images/world.svg" alt=""><span class="ms-2">TÜRKÇE</span></a>
                             </li>
                         </ul>
                     </div>
@@ -142,15 +132,33 @@
             </div>
         </div>
     </header>
-    <span class="d-lg-none d-block" style="font-size:30px;cursor:pointer;margin: 0;" id="nav-btn">&#9776;</span>
 
+    <span class="d-lg-none d-block">
+        <div class="nav-btn-parent">
+            <div class="container d-flex justify-content-between">
+                <div id="nav-btn">
+                    <span>&#9776;</span>
+                    <span>Menu</span>
+                </div>
+                <div>
+                    <img src="../assets/images/logo.png" alt="" width="98px" height="21px">
+                </div>
+                <div>
+                    <span class="text-white">CANLI DESTEK</span> <img src="../assets/images/chat.svg" width="22px"
+                        height="22px" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </span>
     <div class="content" id="content">
         <section class="first-section container">
+
             <div class="row">
-                <div class="col-2">
+
+                <div class="col-lg-2 col-6">
                     <h4>Referanslar</h4>
                 </div>
-                <div class="offset-6 col-2">
+                <div class="offset-lg-6 col-lg-2 col-6">
                     <ul class="main-list">
                         <li class="me-2">
                             <a href="#">Ana Sayfa</a>

@@ -1,4 +1,4 @@
-const navbtn = document.getElementById("nav-btn");
+const navbtn = document.querySelector("#nav-btn>span");
 const content = document.getElementById("content");
 const header = document.getElementById("header");
 const headerPart = document.getElementById("header-part");
