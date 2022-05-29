@@ -459,6 +459,45 @@ ul {
     .border-top {
         border: 0 !important;
     }
+
+    #langs {
+        min-height: 45px !important;
+
+        * {
+            display: none !important;
+
+            &::after {
+                transform: scale(0) !important;
+
+            }
+        }
+
+        &.make-text-white {
+            * {
+                display: inline-block !important;
+
+                &::after {
+                    transform: scale(0) !important;
+
+                }
+            }
+        }
+    }
+
+    #lang {
+        a {
+            &::after {
+                transform: scale(0) !important;
+            }
+        }
+
+        .dropdown {
+            &::before {
+                transform: rotate(180deg) !important;
+            }
+        }
+
+    }
 }
 
 @include media-breakpoint-up(lg) {

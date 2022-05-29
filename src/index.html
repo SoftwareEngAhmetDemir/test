@@ -14,12 +14,23 @@
     body {
         overflow-x: hidden;
     }
+
+    .cover {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+  
 </style>
 <!-- <link rel="stylesheet" href="customIndex.css"> -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
 <body>
-    
     <header id="header">
         <div class="py-lg-3">
             <div id="header-part" class="header-part">
@@ -119,330 +130,349 @@
                             <li>
                                 <a href="#"> DUYURULAR <sup class="duyurular text-white">1</sup></a>
                             </li>
+                            <li id="langs">
+                                <a href="#"><img width="25px" src="../assets/images/world.svg" alt=""><span class="ms-2">ENGLISH</span></a>
+                            </li>
+                            <li id="lang" class="title" style="z-index: 99999999999999;">
+                                 <a id="xlang" class="dropdown dropdown-toggle" href="#"><img width="25px" src="../assets/images/world.svg" alt=""><span class="ms-2">TÜRKÇE</span></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <span class="d-lg-none d-block" style="font-size:30px;cursor:pointer;margin: 0;" id="nav-btn">&#9776;</span> 
+    <span class="d-lg-none d-block" style="font-size:30px;cursor:pointer;margin: 0;" id="nav-btn">&#9776;</span>
 
- <div class="content" id="content">
-    <section class="first-section container">
-        <div class="row">
-            <div class="col-2">
-                <h4>Referanslar</h4>
-            </div>
-            <div class="offset-6 col-2">
-                <ul class="main-list">
-                    <li class="me-2">
-                        <a href="#">Ana Sayfa</a>
-                    </li>
-                    <li>
-                        <a href="#">Referanslar</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-lg-6 col-12 order-lg-1 order-2">
-                <h1>Arkadaşını davet et, hep birlikte kazanmaya başla!</h1>
-                <div class="row">
-                    <div class="col-4">
-                        <p>Alacağınız Oran</p>
-                        <p>%20</p>
-                    </div>
-                    <div class="offset-3 col-4">
-                        <p>Arkadaşınızın Alacağı Oran</p>
-                        <p>%10</p>
-                    </div>
-                </div>
-                <nav class="stepper-p">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="stepper-b active" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="true"></button>
-                        <button class="stepper-b" id="nav-profile-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                            aria-selected="false"></button>
-                        <button class="stepper-b" id="nav-contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                            aria-selected="false"></button>
-                        <button class="stepper-b" id="nav-home-tab1" data-bs-toggle="tab" data-bs-target="#nav-home1"
-                            type="button" role="tab" aria-controls="nav-home1" aria-selected="false"></button>
-                        <button class="stepper-b" id="nav-profile-tab1" data-bs-toggle="tab"
-                            data-bs-target="#nav-profile1" type="button" role="tab" aria-controls="nav-profile1"
-                            aria-selected="false"></button>
-                        <button class="stepper-b" id="nav-contact-tab1" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact1" type="button" role="tab" aria-controls="nav-contact1"
-                            aria-selected="false"></button>
-                        <button class="stepper-b" id="nav-contact-tab2" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2"
-                            aria-selected="false"></button>
-                        <progress id="progress" value="0"></progress>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent" style="height: 135px;">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="clip row">
-                            <div class="col-2">
-                                Referans Kimliği
-                            </div>
-                            <div class="offset-4 col-6 clip-board">
-                                <div class="tooltipc">text copied</div>
-                                <div class="d-flex align-items-center justify-content-end">
-                                    <div class="text">hello ahmed demasasasaır</div>
-                                    <img src="../assets/images/clone.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="clip row">
-                            <div class="col-2">
-                                Referans Kimliği
-                            </div>
-                            <div class="offset-4 col-6 clip-board">
-                                <div class="tooltipc">text copied</div>
-                                <div class="d-flex align-items-center justify-content-end">
-                                    <div class="text">hello ahmed demasasasaır</div>
-                                    <img src="../assets/images/clone.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <div class="clip row">
-                            <div class="col-2">
-                                Referans Kimliği
-                            </div>
-                            <div class="offset-4 col-6 clip-board">
-                                <div class="tooltipc">text copied 3</div>
-                                <div class="d-flex align-items-center justify-content-end">
-                                    <div class="text">https://accounts....f=76798118</div>
-                                    <img src="../assets/images/clone.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clip row">
-                            <div class="col-2">
-                                Referans Linki
-                            </div>
-                            <div class="offset-4 col-6 clip-board">
-                                <div class="tooltipc">text copied 4</div>
-                                <div class="d-flex align-items-center justify-content-end m-0">
-                                    <div class="text">07387299</div>
-                                    <img src="../assets/images/clone.svg" alt="" srcset="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-home1" role="tabpanel" aria-labelledby="nav-home-tab1">a1
-                    </div>
-                    <div class="tab-pane fade" id="nav-profile1" role="tabpanel" aria-labelledby="nav-profile-tab1">
-                        b1
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact-tab1">
-                        c1
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2">
-                        c2
-                    </div>
-                </div>
-                <button class="btn btn-primary">Arkadaşını Davet Et</button>
-                <button class="btn btn-primary"><img src="../assets/images/barcode.svg" alt="" srcset=""></button>
-            </div>
-            <div class="col-lg-6 col-12 my-5 order-lg-2 order-1">
-                <img src="../assets/images/rtchands.svg" alt="" width="100%" height="393.97px;" />
-            </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="row">
-            <div class="my-5 col-12">
-                <h4>
-                    SİZ VE ARKADAŞLARINIZI İÇİN ÖDÜLLER
-                </h4>
-                <p>
-                    Dilediğiniz kadar arkadaşınızı yönlendirebilirsiniz. ICRYPEX referans programı arkadaşlarınızla
-                    beraber
-                    bonus kazanmanıza olanak sağlar. Siz ve arkadaşlarınız gereksinimleri karşıladığınızda
-                    ödüllendirilmeye
-                    hazırsınız demektir!Davet eden kişi, davet ettiği arkadaşlarının işlem ücretlerinden kazanacağı
-                    oranı
-                    paylaşmak isteyebilir. Ali, Ayşe’yi davet ediyorsa Ayşe’nin işlem ücretlerinden %000 oranına kadar
-                    bonus
-                    kazanacaktır. Bu oranı kendisi belirleyerek Ayşe ile paylaşır ve bu durumda Ayşe de kazanır.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="second-section container">
-        <div class="row">
-        
-            <div class="col-lg-6 col-12 order-lg-0 order-1">
-                <h4>
-                    REFRANS LİNKİNİ PAYLAŞIN
-                </h4>
-                <p>
-                    Yönlendirme puanlarınız arttıkça hak ediş bonuslarınızın değeri de artar.
-                    Daha çok arkadaşınızla referans link paylaştıkça, karşılıklı kazanma şansınız da artmış olacak!
-                    Öyleyse hemen şimdi:
-                    Cüzdanınızın yanında bulunan Referans linkini kopyalayıp arkadaşınızla paylaşarak Referans
-                    programına
-                    başlayabilirsiniz!
-
-                    Arkadaşınız ICRYPEX’e üye olurken paylaştığınız referans linki üzerinde yazan Referans Kimliğini
-                    kopyalar ve “Referans Kimliği” bölümüne yapıştırır. Böylece üyeliği ve KYC işlemi tamamlandıktan
-                    sonra,
-                    ICRYPEX Referans Programı’na girmiş olur.
-                </p>
-            </div>
-            <div class="col-lg-6 col-12 order-lg-1 order-0">
-                <img src="../assets/images/threepeople.svg" alt="" width="100%" height="222px">
-            </div>
-           
-        </div>
-    </section>
-    <section class="container">
-        <div class="row">
-            <div class="col-lg-6 col-12">
-                <img src="../assets/images/4people.svg" alt="" width="100%" height="188px">
-            </div>
-            <div class="col-lg-6 col-12">
-                <h4>
-                    ARKADAŞLARINIZI PARA GÇNDERMEYE DAVET EDİN
-                </h4>
-                <p>
-                    Davet edenler, ….. yıllık geçerlilik süresi ile %40’lık bonus oranına sahiptir. Ali’nin Ayşe ile bu
-                    oranın %10’unu paylaşmayı seçip kendisine %30’luk bir referans bonus oranı ayırdığını düşünelim.
-                    Ayşe 100 TRY’lik bir işlem ücreti oluşturduğunda, Ali, 30 TRY’lik Ayşe ise 10 TRY’lik bir bonus
-                    kazanır.
-                    Bu oran üzerinden Ali, çoklu davet kodlarının işlevini kullanarak diğer davetlilere “farklı paylaşım
-                    oranları”na sahip davetiye QR kodları gönderebilir.
-                </p>
-            </div>
-            
-        </div>
-    </section>
-    <section class="container">
-        <div class="row">
-            <div class="col-lg-6 col-12 order-lg-0 order-1">
-                <h4>
-                    ÖDÜLLENDİRME
-                </h4>
-                <p>
-                    Arkadaşınız referans linkiniz aracılığıyla kaydolmayı tamamladığında, “Arkadaşının Kullanıcı
-                    Numarası” bölümüne eklenir. Arkadaşınız KYC doğrulamasını tamamlayıp işlem yapmaya başlar başlamaz
-                    bonusları almaya başlayabilirsiniz………….. ekranı üzerinden hak ettiğiniz bonusları görüntüleyebilir
-                    ve dilediğinizce çekebilirsiniz. Bonuslar, TRY birimi üzerinden hesabınıza aktarılacaktır.
-                </p>
-                <p>
-                    Şartlar ve Koşullar için bkz. <a href="#"><u>icrypex.com/gc-legal</u></a>
-                </p>
-            </div>
-            <div class="col-lg-6 col-12 order-lg-1 order-0">
-                <img src="../assets/images/dollar.svg" alt="" height="250px" width="100%" />
-            </div>
-        </div>
-    </section>
-   
-    <section class="third-section">
-        <div class="offset-lg-1 container py-5">
-            <h4>
-                BONUS TAKİP PANOSU
-            </h4>
+    <div class="content" id="content">
+        <section class="first-section container">
             <div class="row">
-                <div class="col-lg-2 col-12">
-                    <div class="btn-group w-100">
-                        <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="defaultDropdown6"
-                            data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                            Default dropdown
-                        </button>
-                        <ul class="dropdown-menu w-100" 
-                        aria-labelledby="defaultDropdown6">
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        </ul>
-                    </div>
+                <div class="col-2">
+                    <h4>Referanslar</h4>
                 </div>
-                <div class="col-lg-1 col-3 my-lg-0 my-4">
-                    <button type="button" class="btn btn-light w-100">Tümü</button>
-                </div>
-                <div class="col-lg-1 col-3 my-lg-0 my-4">
-                    <button type="button" class="btn btn-light w-100">Dün</button>
-                </div>
-                <div class="col-lg-1 col-3 my-lg-0 my-4">
-                    <button type="button" class="btn btn-light w-100">Bu Hafta</button>
-                </div>
-                <div class="col-lg-1 col-3 my-lg-0 my-4">
-                    <button type="button" class="btn btn-light w-100">Bu Ay</button>
+                <div class="offset-6 col-2">
+                    <ul class="main-list">
+                        <li class="me-2">
+                            <a href="#">Ana Sayfa</a>
+                        </li>
+                        <li>
+                            <a href="#">Referanslar</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="fourth-section container">
-        <h4>
-            KOMİSYON İADESİ
-        </h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-12 order-lg-1 order-2">
+                    <h1>Arkadaşını davet et, hep birlikte kazanmaya başla!</h1>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Alacağınız Oran</p>
+                            <p>%20</p>
+                        </div>
+                        <div class="offset-3 col-4">
+                            <p>Arkadaşınızın Alacağı Oran</p>
+                            <p>%10</p>
+                        </div>
+                    </div>
+                    <nav class="stepper-p">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="stepper-b active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true"></button>
+                            <button class="stepper-b" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false"></button>
+                            <button class="stepper-b" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false"></button>
+                            <button class="stepper-b" id="nav-home-tab1" data-bs-toggle="tab"
+                                data-bs-target="#nav-home1" type="button" role="tab" aria-controls="nav-home1"
+                                aria-selected="false"></button>
+                            <button class="stepper-b" id="nav-profile-tab1" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile1" type="button" role="tab" aria-controls="nav-profile1"
+                                aria-selected="false"></button>
+                            <button class="stepper-b" id="nav-contact-tab1" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact1" type="button" role="tab" aria-controls="nav-contact1"
+                                aria-selected="false"></button>
+                            <button class="stepper-b" id="nav-contact-tab2" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2"
+                                aria-selected="false"></button>
+                            <progress id="progress" value="0"></progress>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent" style="height: 135px;">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="clip row">
+                                <div class="col-2">
+                                    Referans Kimliği
+                                </div>
+                                <div class="offset-4 col-6 clip-board">
+                                    <div class="tooltipc">text copied</div>
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <div class="text">hello ahmed demasasasaır</div>
+                                        <img src="../assets/images/clone.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="clip row">
+                                <div class="col-2">
+                                    Referans Kimliği
+                                </div>
+                                <div class="offset-4 col-6 clip-board">
+                                    <div class="tooltipc">text copied</div>
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <div class="text">hello ahmed demasasasaır</div>
+                                        <img src="../assets/images/clone.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="clip row">
+                                <div class="col-2">
+                                    Referans Kimliği
+                                </div>
+                                <div class="offset-4 col-6 clip-board">
+                                    <div class="tooltipc">text copied 3</div>
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <div class="text">https://accounts....f=76798118</div>
+                                        <img src="../assets/images/clone.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clip row">
+                                <div class="col-2">
+                                    Referans Linki
+                                </div>
+                                <div class="offset-4 col-6 clip-board">
+                                    <div class="tooltipc">text copied 4</div>
+                                    <div class="d-flex align-items-center justify-content-end m-0">
+                                        <div class="text">07387299</div>
+                                        <img src="../assets/images/clone.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-home1" role="tabpanel" aria-labelledby="nav-home-tab1">a1
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile1" role="tabpanel" aria-labelledby="nav-profile-tab1">
+                            b1
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact-tab1">
+                            c1
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2">
+                            c2
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Arkadaşını Davet Et</button>
+                    <button class="btn btn-primary"><img src="../assets/images/barcode.svg" alt="" srcset=""></button>
+                </div>
+                <div class="col-lg-6 col-12 my-5 order-lg-2 order-1">
+                    <img src="../assets/images/rtchands.svg" alt="" width="100%" height="393.97px;" />
+                </div>
+            </div>
+        </section>
 
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Arkadaşının Kullanıcı Numarası</th>
-                    <th scope="col">Kazanılan Komisyon</th>
-                    <th scope="col">Arkadaşın Alım Sarım Tarihi</th>
-                    <th scope="col">Komisyon Zamanı</th>
-                    <th scope="col">Dağıtım Durumu</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>000000000000000</td>
-                    <td>0.0000 TRY</td>
-                    <td>0000.00.00 00:00</td>
-                    <td>00:00</td>
-                    <td>Beklemede</td>
-                </tr>
-                <tr>
-                    <td>000000000000000</td>
-                    <td>0.0000 TRY</td>
-                    <td>0000.00.00 00:00</td>
-                    <td>00:00</td>
-                    <td>Beklemede</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section class="fifth-section container">
-        <h4>
-            Referanslar
-        </h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </p>
-    </section>
-    <footer>
-        <script src="../jquery-3.6.0.js"></script>
-        <script src="../jquery-3.6.0.min.js"></script>
-        <script src="./clip-board.js"></script>
-        <script src="./nav-bar.js"></script>
-        <script src="./index.js"></script>
-        <script src="./droplist.js"></script>
-    </footer>
- </div>
+        <section class="container">
+            <div class="row">
+                <div class="my-5 col-12">
+                    <h4>
+                        SİZ VE ARKADAŞLARINIZI İÇİN ÖDÜLLER
+                    </h4>
+                    <p>
+                        Dilediğiniz kadar arkadaşınızı yönlendirebilirsiniz. ICRYPEX referans programı arkadaşlarınızla
+                        beraber
+                        bonus kazanmanıza olanak sağlar. Siz ve arkadaşlarınız gereksinimleri karşıladığınızda
+                        ödüllendirilmeye
+                        hazırsınız demektir!Davet eden kişi, davet ettiği arkadaşlarının işlem ücretlerinden kazanacağı
+                        oranı
+                        paylaşmak isteyebilir. Ali, Ayşe’yi davet ediyorsa Ayşe’nin işlem ücretlerinden %000 oranına
+                        kadar
+                        bonus
+                        kazanacaktır. Bu oranı kendisi belirleyerek Ayşe ile paylaşır ve bu durumda Ayşe de kazanır.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="second-section container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 order-lg-0 order-1">
+                    <h4>
+                        REFRANS LİNKİNİ PAYLAŞIN
+                    </h4>
+                    <p>
+                        Yönlendirme puanlarınız arttıkça hak ediş bonuslarınızın değeri de artar.
+                        Daha çok arkadaşınızla referans link paylaştıkça, karşılıklı kazanma şansınız da artmış olacak!
+                        Öyleyse hemen şimdi:
+                        Cüzdanınızın yanında bulunan Referans linkini kopyalayıp arkadaşınızla paylaşarak Referans
+                        programına
+                        başlayabilirsiniz!
+
+                        Arkadaşınız ICRYPEX’e üye olurken paylaştığınız referans linki üzerinde yazan Referans Kimliğini
+                        kopyalar ve “Referans Kimliği” bölümüne yapıştırır. Böylece üyeliği ve KYC işlemi tamamlandıktan
+                        sonra,
+                        ICRYPEX Referans Programı’na girmiş olur.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-12 order-lg-1 order-0">
+                    <img src="../assets/images/threepeople.svg" alt="" width="100%" height="222px">
+                </div>
+
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <img src="../assets/images/4people.svg" alt="" width="100%" height="188px">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <h4>
+                        ARKADAŞLARINIZI PARA GÇNDERMEYE DAVET EDİN
+                    </h4>
+                    <p>
+                        Davet edenler, ….. yıllık geçerlilik süresi ile %40’lık bonus oranına sahiptir. Ali’nin Ayşe ile
+                        bu
+                        oranın %10’unu paylaşmayı seçip kendisine %30’luk bir referans bonus oranı ayırdığını düşünelim.
+                        Ayşe 100 TRY’lik bir işlem ücreti oluşturduğunda, Ali, 30 TRY’lik Ayşe ise 10 TRY’lik bir bonus
+                        kazanır.
+                        Bu oran üzerinden Ali, çoklu davet kodlarının işlevini kullanarak diğer davetlilere “farklı
+                        paylaşım
+                        oranları”na sahip davetiye QR kodları gönderebilir.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 order-lg-0 order-1">
+                    <h4>
+                        ÖDÜLLENDİRME
+                    </h4>
+                    <p>
+                        Arkadaşınız referans linkiniz aracılığıyla kaydolmayı tamamladığında, “Arkadaşının Kullanıcı
+                        Numarası” bölümüne eklenir. Arkadaşınız KYC doğrulamasını tamamlayıp işlem yapmaya başlar
+                        başlamaz
+                        bonusları almaya başlayabilirsiniz………….. ekranı üzerinden hak ettiğiniz bonusları
+                        görüntüleyebilir
+                        ve dilediğinizce çekebilirsiniz. Bonuslar, TRY birimi üzerinden hesabınıza aktarılacaktır.
+                    </p>
+                    <p>
+                        Şartlar ve Koşullar için bkz. <a href="#"><u>icrypex.com/gc-legal</u></a>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-12 order-lg-1 order-0">
+                    <img src="../assets/images/dollar.svg" alt="" height="250px" width="100%" />
+                </div>
+            </div>
+        </section>
+
+        <section class="third-section">
+            <div class="offset-lg-1 container py-5">
+                <h4>
+                    BONUS TAKİP PANOSU
+                </h4>
+                <div class="row">
+                    <div class="col-lg-2 col-12">
+                        <div class="btn-group w-100">
+                            <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="defaultDropdown6"
+                                data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                Default dropdown
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="defaultDropdown6">
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-3 my-lg-0 my-4">
+                        <button type="button" class="btn btn-light w-100">Tümü</button>
+                    </div>
+                    <div class="col-lg-1 col-3 my-lg-0 my-4">
+                        <button type="button" class="btn btn-light w-100">Dün</button>
+                    </div>
+                    <div class="col-lg-1 col-3 my-lg-0 my-4">
+                        <button type="button" class="btn btn-light w-100">Bu Hafta</button>
+                    </div>
+                    <div class="col-lg-1 col-3 my-lg-0 my-4">
+                        <button type="button" class="btn btn-light w-100">Bu Ay</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourth-section container">
+            <h4>
+                KOMİSYON İADESİ
+            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Arkadaşının Kullanıcı Numarası</th>
+                        <th scope="col">Kazanılan Komisyon</th>
+                        <th scope="col">Arkadaşın Alım Sarım Tarihi</th>
+                        <th scope="col">Komisyon Zamanı</th>
+                        <th scope="col">Dağıtım Durumu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>000000000000000</td>
+                        <td>0.0000 TRY</td>
+                        <td>0000.00.00 00:00</td>
+                        <td>00:00</td>
+                        <td>Beklemede</td>
+                    </tr>
+                    <tr>
+                        <td>000000000000000</td>
+                        <td>0.0000 TRY</td>
+                        <td>0000.00.00 00:00</td>
+                        <td>00:00</td>
+                        <td>Beklemede</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="fifth-section container">
+            <h4>
+                Referanslar
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.
+            </p>
+        </section>
+        <footer>
+            <script src="../jquery-3.6.0.js"></script>
+            <script src="../jquery-3.6.0.min.js"></script>
+            <script src="./clip-board.js"></script>
+            <script src="./nav-bar.js"></script>
+            <script src="./index.js"></script>
+            <script src="./droplist.js"></script>
+        </footer>
+    </div>
 </body>
+
 </html>

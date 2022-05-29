@@ -14345,6 +14345,31 @@ ul .dropdown-menu li::after {
   .border-top {
     border: 0 !important;
   }
+  #langs {
+    min-height: 45px !important;
+  }
+  #langs * {
+    display: none !important;
+  }
+  #langs *::after {
+    -webkit-transform: scale(0) !important;
+            transform: scale(0) !important;
+  }
+  #langs.make-text-white * {
+    display: inline-block !important;
+  }
+  #langs.make-text-white *::after {
+    -webkit-transform: scale(0) !important;
+            transform: scale(0) !important;
+  }
+  #lang a::after {
+    -webkit-transform: scale(0) !important;
+            transform: scale(0) !important;
+  }
+  #lang .dropdown::before {
+    -webkit-transform: rotate(180deg) !important;
+            transform: rotate(180deg) !important;
+  }
 }
 
 @media (min-width: 992px) {
