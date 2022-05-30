@@ -1,3 +1,11 @@
+.white-list {
+    li {
+        a {
+            color: #fff !important;
+        }
+    }
+}
+
 .bar {
     transition: all 2s ease-in-out;
     width: 0;
@@ -8,6 +16,13 @@
     }
 }
 
+.pans {
+    span {
+        font-size: 17px;
+        line-height: 32px;
+        color: $green;
+    }
+}
 
 h1 {
     color: $primary;
@@ -20,17 +35,19 @@ h1 {
 
 .border-bottom-c {
     cursor: pointer;
+
     &::after {
         content: "" !important;
         width: 5% !important;
         background: $primary !important;
         height: 4px !important;
-        transition:all 0.5s ease-in-out !important;
+        transition: all 0.5s ease-in-out !important;
     }
-    &:hover  {
-        &::after{
-         width: 100% !important;
-     }
+
+    &:hover {
+        &::after {
+            width: 100% !important;
+        }
     }
 }
 
@@ -147,8 +164,13 @@ header {
                 }
 
 
-                &:not(:last-child):after {
+                &:not(:last-child)::after {
                     content: "|";
+                    padding: 0 5px;
+                }
+
+                &.noafter::after {
+                    content: "" !important;
                     padding: 0 5px;
                 }
 

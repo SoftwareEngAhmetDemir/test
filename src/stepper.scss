@@ -55,8 +55,8 @@
             text-align: center;
             background-color: black;
             width: 40%;
-            position: relative;
-            top: -100%;
+            position: fixed !important;
+            top: 100px;
             right: 0;
             transform: translateY(50%);
             border-radius: 6px;
@@ -64,7 +64,8 @@
             opacity: 0;
             position: absolute;
             z-index: 10;
-            transition: all 1s ease-in-out;
+            transition: all 2s ease-in-out;
+            opacity: 0;
 
             &:after {
                 content: "";

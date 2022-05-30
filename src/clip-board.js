@@ -15,7 +15,7 @@ function outFunc() {
 
 
 const clipboard = document.querySelector(".tab-content");
-
+let toast = document.getElementById("liveToast");
 
 clipboard.addEventListener("click", function (e) {
     console.log(e.target.nodeName);
@@ -26,10 +26,13 @@ clipboard.addEventListener("click", function (e) {
         let tooltipmsg = parent.querySelector(".tooltipc");
 
         navigator.clipboard.writeText(text);
-        tooltipmsg.style.opacity = 1;
-        
+       
+        toast.style.opacity = 1;
+        toast.style.right = "0px";
+
         setTimeout(() => {
-            tooltipmsg.style.opacity = 0
-        }, 1000);
+            toast.style.right = "-400px";
+            toast.style.opacity = 0
+        }, 2000);
     }
 })

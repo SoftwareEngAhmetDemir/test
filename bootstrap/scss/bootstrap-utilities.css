@@ -27,11 +27,11 @@
 }
 
 .link-success {
-  color: #70a800;
+  color: #6ebf28;
 }
 
 .link-success:hover, .link-success:focus {
-  color: #8db933;
+  color: #8bcc53;
 }
 
 .link-info {
@@ -517,7 +517,7 @@
 }
 
 .border-success {
-  border-color: #70a800 !important;
+  border-color: #6ebf28 !important;
 }
 
 .border-info {
@@ -1306,7 +1306,7 @@
 }
 
 .fs-4 {
-  font-size: calc(1.2815rem + 0.378vw) !important;
+  font-size: calc(1.275rem + 0.3vw) !important;
 }
 
 .fs-5 {
@@ -1350,15 +1350,15 @@
 }
 
 .lh-sm {
-  line-height: 1.1875 !important;
+  line-height: 1.25 !important;
 }
 
 .lh-base {
-  line-height: 1.1875 !important;
+  line-height: 1.5 !important;
 }
 
 .lh-lg {
-  line-height: 1.1875 !important;
+  line-height: 2 !important;
 }
 
 .text-start {
@@ -1617,7 +1617,7 @@
 }
 
 .rounded {
-  border-radius: 0.5rem !important;
+  border-radius: 0.25rem !important;
 }
 
 .rounded-0 {
@@ -1629,7 +1629,7 @@
 }
 
 .rounded-2 {
-  border-radius: 0.5rem !important;
+  border-radius: 0.25rem !important;
 }
 
 .rounded-3 {
@@ -1645,23 +1645,23 @@
 }
 
 .rounded-top {
-  border-top-left-radius: 0.5rem !important;
-  border-top-right-radius: 0.5rem !important;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
 }
 
 .rounded-end {
-  border-top-right-radius: 0.5rem !important;
-  border-bottom-right-radius: 0.5rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
 }
 
 .rounded-bottom {
-  border-bottom-right-radius: 0.5rem !important;
-  border-bottom-left-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
 }
 
 .rounded-start {
-  border-bottom-left-radius: 0.5rem !important;
-  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+  border-top-left-radius: 0.25rem !important;
 }
 
 .visible {
@@ -4568,7 +4568,7 @@
     font-size: 1.75rem !important;
   }
   .fs-4 {
-    font-size: 1.565rem !important;
+    font-size: 1.5rem !important;
   }
 }
 

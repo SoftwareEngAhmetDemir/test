@@ -16,18 +16,33 @@
     }
 
     .btn {
-        max-height: 46px !important;
+        height: 46px !important;
+    }
+
+    .btn-primary {
+        border-radius: 10px;
+        font-weight: 700;
+        font-family: "Barlow-condense" !important;
     }
 
     a {
         font-family: "Barlow-condense" !important;
         font-size: 1rem;
+        line-height: 19px;
     }
 
-    .city-time,
+    .city-time,.pans,
     table {
         font-family: "Barlow-condense" !important;
     }
+
+    .btn-light,
+    .btn-secondary {
+        font-weight: 500;
+        font-size: 17px !important;
+        line-height: 1.88;
+    }
+
 </style>
 <!-- <link rel="stylesheet" href="customIndex.css"> -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -74,11 +89,8 @@
                         <img src="../assets/images/logo.png" alt="" srcset="" width="50%">
                     </div>
                     <div class="col-lg-9 col-12">
-                        <ul class="side-list">
-                            <li>
-                                <a href="#">Refrence</a>
-                            </li>
-                            <li>
+                        <ul class="side-list white-list">
+                            <li >
                                 <a href="#">ICRYPEX NFT MARKETPLACE <sup class="yeni text-white">Yeni</sup></a>
                             </li>
                             <li>
@@ -132,7 +144,7 @@
                             <li>
                                 <a href="#"> YARDIM & DESTEK</a>
                             </li>
-                            <li>
+                            <li class="noafter">
                                 <a href="#"> DUYURULAR <sup class="duyurular text-white">1</sup></a>
                             </li>
                             <li id="langs" class="d-lg-none d-block">
@@ -155,24 +167,33 @@
             <div class="container d-flex justify-content-between align-items-center">
                 <div id="nav-btn">
                     <span>&#9776;</span>
-                    <span>Menu</span>
+                    <span style="font-size: 14px;">Menu</span>
                 </div>
                 <div>
                     <img src="../assets/images/logo.png" alt="" width="98px" height="21px">
                 </div>
                 <div>
-                    <span class="text-white">CANLI DESTEK</span> <img src="../assets/images/chat.svg" width="22px"
+                    <span class="text-white" style="font-size: 14px;">CANLI DESTEK</span> 
+                    <img src="../assets/images/chat.svg" width="22px"
                         height="22px" alt="" srcset="">
                 </div>
             </div>
         </div>
     </span>
     <div>
+        <div id="liveToast" class="toast-container p-3"
+            style="position: fixed;right: -400px;bottom: 20px;transition: all 1s ease-in-out;">
+            <div class="toast d-block bg-info">
+                <div class="toast-body text-white fw-bold text-center">
+                    Text Has Been Copied
+                </div>
+            </div>
+        </div>
         <div class="content" id="content">
             <section class="first-section container">
 
                 <div class="d-lg-block d-none">
-                    <div class="row border-bottom align-items-center mt-2 border-bottom-c">
+                    <div class="row border-bottom align-items-center mt-3 border-bottom-c">
                         <div class="ps-lg-0 col-lg-2 col-6">
                             <h4><a href="#" class="text-decoration-none d-block h-title fs-4">Referanslar</a></h4>
                         </div>
@@ -262,7 +283,6 @@
                                         Referans Kimliği
                                     </div>
                                     <div class="offset-4 col-6 clip-board">
-                                        <div class="tooltipc">text copied</div>
                                         <div class="d-flex align-items-center justify-content-end">
                                             <div class="text">hello ahmed demasasasaır</div>
                                             <img src="../assets/images/clone.svg" alt="" srcset="">
@@ -277,7 +297,6 @@
                                         Referans Kimliği
                                     </div>
                                     <div class="offset-4 col-6 clip-board">
-                                        <div class="tooltipc">text copied</div>
                                         <div class="d-flex align-items-center justify-content-end">
                                             <div class="text">hello ahmed demasasasaır</div>
                                             <img src="../assets/images/clone.svg" alt="" srcset="">
@@ -292,7 +311,6 @@
                                         Referans Kimliği
                                     </div>
                                     <div class="offset-4 col-6 clip-board">
-                                        <div class="tooltipc">text copied 3</div>
                                         <div class="d-flex align-items-center justify-content-end">
                                             <div class="text">https://accounts....f=76798118</div>
                                             <img src="../assets/images/clone.svg" alt="" srcset="">
@@ -304,7 +322,6 @@
                                         Referans Linki
                                     </div>
                                     <div class="offset-4 col-6 clip-board">
-                                        <div class="tooltipc">text copied 4</div>
                                         <div class="d-flex align-items-center justify-content-end m-0">
                                             <div class="text">07387299</div>
                                             <img src="../assets/images/clone.svg" alt="" srcset="">
@@ -343,7 +360,7 @@
 
             <section class="container mt-5">
                 <div class="row">
-                    <div class="my-5 col-12">
+                    <div class="my-lg-5 col-12">
                         <h4>
                             SİZ VE ARKADAŞLARINIZI İÇİN ÖDÜLLER
                         </h4>
@@ -366,8 +383,8 @@
             </section>
 
 
-            <section class="second-section container mb-5">
-                <div class="row">
+            <section class="second-section container">
+                <div class="row mb-5">
                     <div class="col-lg-6 col-12 order-lg-0 order-1">
                         <h4>
                             REFRANS LİNKİNİ PAYLAŞIN
@@ -390,15 +407,16 @@
                             ICRYPEX Referans Programı’na girmiş olur.
                         </p>
                     </div>
-                    <div class="col-lg-6 col-6 order-lg-1 order-0 position-relative">
-                        <img src="../assets/images/threepeople.svg" alt="" width="100%" height="80%"
-                            class="position-absolute">
+                    <div class="col-lg-6 col-12 order-lg-1 order-0 position-relative text-center mb-5">
+                        <img src="../assets/images/threepeople.svg" alt="" width="160.34px"
+                        height="191.74px"
+                            >
                     </div>
                 </div>
             </section>
             <section class="container my-5">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-6 col-12 mb-5">
                         <img src="../assets/images/4people.svg" alt="" width="100%" height="188px">
                     </div>
                     <div class="col-lg-6 col-12">
@@ -424,7 +442,7 @@
                 </div>
             </section>
             <section class="container">
-                <div class="row">
+                <div class="row my-5">
                     <div class="col-lg-6 col-12 order-lg-0 order-1">
                         <h4>
                             ÖDÜLLENDİRME
@@ -441,43 +459,59 @@
                             Şartlar ve Koşullar için bkz. <a href="#" class="fw-bold"><u>icrypex.com/gc-legal</u></a>
                         </p>
                     </div>
-                    <div class="col-lg-6 col-12 order-lg-1 order-0 position-relative">
-                        <img src="../assets/images/dollar.svg" alt="" height="80%" width="100%"
-                            class="position-absolute top-0" />
+                    <div class="col-lg-6 col-12 order-lg-1 order-0 position-relative 
+                    d-flex justify-content-center align-items-center mb-lg-0 mb-5">
+                        <img src="../assets/images/dollar.svg" alt="" width="250px"
+                        height="250px"/>
                     </div>
                 </div>
             </section>
             <section class="third-section">
                 <div class="offset-lg-1 container py-5">
-                    <h4>
+                    <h4 class="mb-3">
                         BONUS TAKİP PANOSU
                     </h4>
-                    <div class="row">
-                        <div class="col-lg-2 col-12">
+                    <div class="row gx-3">
+                        <div class="col-lg-3 col-12">
                             <div class="btn-group w-100">
                                 <button class="btn btn-secondary dropdown-toggle w-100" type="button"
                                     id="defaultDropdown6" data-bs-toggle="dropdown" data-bs-auto-close="true"
                                     aria-expanded="false">
-                                    Default dropdown
+                                    Tüm Hesaplar
                                 </button>
                                 <ul class="dropdown-menu w-100" aria-labelledby="defaultDropdown6">
-                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
-                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
-                                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                    <li><a class="dropdown-item" href="#">Tümü</a></li>
+                                    <li><a class="dropdown-item" href="#">Dün</a></li>
+                                    <li><a class="dropdown-item" href="#">Bu Hafta</a></li>
+                                    <li><a class="dropdown-item" href="#">Bu Ay</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-1 col-3 my-lg-0 my-4">
-                            <button type="button" class="btn btn-light w-100">Tümü</button>
+                        <div class="col-lg-2 col-3 my-lg-0 my-4">
+                            <button type="button" class="btn btn-secondary w-100">Tümü</button>
                         </div>
-                        <div class="col-lg-1 col-3 my-lg-0 my-4">
+                        <div class="col-lg-2 col-3 my-lg-0 my-4">
                             <button type="button" class="btn btn-light w-100">Dün</button>
                         </div>
-                        <div class="col-lg-1 col-3 my-lg-0 my-4">
+                        <div class="col-lg-2 col-3 my-lg-0 my-4">
                             <button type="button" class="btn btn-light w-100">Bu Hafta</button>
                         </div>
-                        <div class="col-lg-1 col-3 my-lg-0 my-4">
+                        <div class="col-lg-2 col-3 my-lg-0 my-4">
                             <button type="button" class="btn btn-light w-100">Bu Ay</button>
+                        </div>
+                    </div>
+                    <div class="row pans my-5">
+                        <div class="col-lg-4 col-12 my-lg-0 my-2">
+                            <h6 class="fw-normal"> Kazançlarınız</h6>
+                            <div class="fs-5"> 0,000 BTC <span>+0BTC</span></div>
+                        </div>
+                        <div class="col-lg-4 col-12 my-lg-0 my-2">
+                            <h6 class="fw-normal">İşlem Yapmaya Başlayan Arkadaşlar</h6>
+                            <div class="fs-5">0,000<span>+0</span></div>
+                        </div>
+                        <div class="col-lg-4 col-12 my-lg-0 my-2">
+                            <h6 class="fw-normal">Arkadaşlar</h6>
+                            <div class="fs-5">0,000<span>+0</span></div>
                         </div>
                     </div>
                 </div>
@@ -504,35 +538,35 @@
                             anim id est laborum.
                         </p>
                     </div>
-                  <div class="col-12 d-lg-block d-none mt-5">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">Arkadaşının Kullanıcı Numarası</th>
-                                <th scope="col">Kazanılan Komisyon</th>
-                                <th scope="col">Arkadaşın Alım Sarım Tarihi</th>
-                                <th scope="col">Komisyon Zamanı</th>
-                                <th scope="col">Dağıtım Durumu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>000000000000000</td>
-                                <td>0.0000 TRY</td>
-                                <td>0000.00.00 00:00</td>
-                                <td>00:00</td>
-                                <td>Beklemede</td>
-                            </tr>
-                            <tr>
-                                <td>000000000000000</td>
-                                <td>0.0000 TRY</td>
-                                <td>0000.00.00 00:00</td>
-                                <td>00:00</td>
-                                <td>Beklemede</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                  </div>
+                    <div class="col-12 d-lg-block d-none mt-5">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Arkadaşının Kullanıcı Numarası</th>
+                                    <th scope="col">Kazanılan Komisyon</th>
+                                    <th scope="col">Arkadaşın Alım Sarım Tarihi</th>
+                                    <th scope="col">Komisyon Zamanı</th>
+                                    <th scope="col">Dağıtım Durumu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>000000000000000</td>
+                                    <td>0.0000 TRY</td>
+                                    <td>0000.00.00 00:00</td>
+                                    <td>00:00</td>
+                                    <td>Beklemede</td>
+                                </tr>
+                                <tr>
+                                    <td>000000000000000</td>
+                                    <td>0.0000 TRY</td>
+                                    <td>0000.00.00 00:00</td>
+                                    <td>00:00</td>
+                                    <td>Beklemede</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
             <section class="fifth-section container my-5">
