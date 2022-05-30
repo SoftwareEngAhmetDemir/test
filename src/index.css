@@ -14107,6 +14107,7 @@ header .header-part li {
 header .header-part li a {
   text-decoration: none;
   color: #758ca3;
+  position: relative;
 }
 
 header .header-part li a::after {
@@ -14124,7 +14125,8 @@ header .header-part li a::after {
   color: #4294FF;
   position: absolute;
   left: 0;
-  top: 20px;
+  right: 0;
+  top: calc(100% + 3px);
 }
 
 header .header-part li a:active, header .header-part li a:hover {
