@@ -13996,6 +13996,10 @@ progress {
   }
 }
 
+.white-list {
+  white-space: nowrap;
+}
+
 .white-list li a {
   color: #fff !important;
 }
@@ -14099,11 +14103,6 @@ header .header-part {
   padding: 0 10px;
 }
 
-header .header-part li {
-  height: 42px;
-  position: relative;
-}
-
 header .header-part li a {
   text-decoration: none;
   color: #758ca3;
@@ -14126,7 +14125,7 @@ header .header-part li a::after {
   position: absolute;
   left: 0;
   right: 0;
-  top: calc(100% + 3px);
+  top: calc(100% + 4px);
 }
 
 header .header-part li a:active, header .header-part li a:hover {
@@ -14383,6 +14382,9 @@ ul .dropdown-menu li::after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
+  header .vertical-ref {
+    border: 0 !important;
+  }
   header ul li {
     display: block !important;
   }
@@ -14507,6 +14509,7 @@ ul .dropdown-menu li::after {
   }
   header ul li {
     display: inline !important;
+    margin-bottom: 10px !important;
   }
 }
 

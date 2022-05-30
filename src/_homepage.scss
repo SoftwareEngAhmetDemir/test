@@ -1,4 +1,5 @@
 .white-list {
+    white-space:nowrap;
     li {
         a {
             color: #fff !important;
@@ -104,8 +105,6 @@ header {
         padding: 0 10px;
 
         li {
-            height: 42px;
-            position: relative;
             a {
                 text-decoration: none;
                 color: #758ca3;
@@ -125,7 +124,7 @@ header {
                     position: absolute;
                     left: 0;
                     right: 0;
-                    top: calc(100% + 3px);
+                    top: calc(100% + 4px);
                 }
 
                 &:active,
@@ -368,7 +367,7 @@ ul {
 
         .header-part {
             display: none;
-
+        
             ul.side-list {
 
 
@@ -441,7 +440,10 @@ ul {
                 }
             }
         }
-
+        .vertical-ref {
+          
+           border:0 !important;
+        }
         ul {
             li {
                 display: block !important;
@@ -614,6 +616,7 @@ ul {
         ul {
             li {
                 display: inline !important;
+                margin-bottom: 10px !important;
             }
         }
     }
