@@ -104,12 +104,13 @@ header {
         padding: 0 10px;
 
         li {
+            height: 42px;
+            position: relative;
             a {
-                position: relative;
                 text-decoration: none;
                 color: #758ca3;
 
-
+                
                 &::after {
                     transition: all 0.4s ease-in-out;
                     transform-origin: center center;
@@ -135,7 +136,6 @@ header {
 
                     }
                 }
-
             }
         }
 

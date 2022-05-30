@@ -23,23 +23,19 @@ document.getElementById("content").onclick = function () {
     navbtn.classList.remove("d-none");
     navbtn.classList.add("d-lg-block");
 }
-const langbtn = document.getElementById("lang");
 const langs = document.getElementById("langs");
 
-function langslist(){
-    langs.classList.toggle("langs");
-    langs.classList.toggle("make-text-white");
-    document.querySelector("#lang a").classList.toggle("dropdown");
-}
-
-langbtn.onclick = function(e){
-   langslist();
-}
 document.getElementById("header").onclick = function(e){
-   if(e.target.getAttribute("id")!=="xlang"){
-    langs.classList.add("langs");
-    langs.classList.remove("make-text-white");
-    document.querySelector("#lang a").classList.add("dropdown");
-   }
-   
+    console.log();
+    let id = e.target.getAttribute("id");
+    if(id==="tr"||id==="xlang"||id==="icon"){
+    langs.classList.toggle("langs");
+        langs.classList.toggle("make-text-white");
+         document.querySelector("#lang a").classList.toggle("dropdown");
+    }
+    else{
+        langs.classList.add("langs");
+        langs.classList.remove("make-text-white");
+        document.querySelector("#lang a").classList.add("dropdown");
+    }
 }

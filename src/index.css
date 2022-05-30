@@ -14099,8 +14099,12 @@ header .header-part {
   padding: 0 10px;
 }
 
-header .header-part li a {
+header .header-part li {
+  height: 42px;
   position: relative;
+}
+
+header .header-part li a {
   text-decoration: none;
   color: #758ca3;
 }
